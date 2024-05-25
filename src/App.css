@@ -27,3 +27,78 @@ padding: 15px 0;
   padding: 0 10px;
   outline-color: #ef6c33;
 }
+.postListContainer{
+  text-align: center;
+  margin-top: 50px;
+}
+.postListContainer h1{
+  color: #ef6c33;
+  margin-bottom: 50px;
+}
+.postListContainer .list-container{
+  padding: 0 10px;
+display: grid;
+grid-template-columns: repeat(auto-fit , minmax(270px,1fr));
+gap: 15px;
+}
+.postListContainer .list-container .post{
+  background-color: #0c4a60;
+  height: 200px;
+  width: 100%;
+  margin: 10px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+  cursor: pointer;
+}
+.postListContainer .list-container .post:hover{
+  background-color: #24657c;
+}
+.postListContainer .list-container .post h3{
+  color: #7d8e95;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+}
+.postListContainer .list-container .post p{
+  color: rgb(218, 205, 205);
+  font-weight: 700;
+  padding: 10px;
+  white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 200px; /* Adjust the width as needed */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
